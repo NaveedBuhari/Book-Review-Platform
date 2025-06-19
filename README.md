@@ -58,3 +58,43 @@ You should see: MongoDB connected and Server running on port 5000
 - This project uses a local MongoDB instance running on port 27017. Ensure MongoDB is installed and running locally before starting the server. Alternatively, you may update the connection string in server/app.js to use a remote MongoDB service like MongoDB Atlas if preferred.
 
 
+## 📦 Sample Data Structures (MongoDB)
+You can manually insert data in MongoDB using the following formats:
+
+1. 🧑 Users Collection
+   ```bash
+   {
+   "username": "naveed",
+   "password": "123",
+   "name": "Naveed Buhari",
+   "avatar": "https://i.pravatar.cc/150?img=10",
+   "bio": "I manage the platform.",
+   "role": "admin"
+   }
+
+2. 📚 Books Collection
+   ```bash
+   {
+   "title": "The Alchemist",
+   "author": "Paulo Coelho",
+   "description": "A journey of a shepherd boy to realize his destiny.",
+   "coverImage": "https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg",
+   "rating": 4.5
+   }
+
+3. 📝 Reviews Collection
+   ```bash
+   {
+   "bookId": "BOOK_OBJECT_ID_HERE",
+   "userName": "Naveed Buhari",
+   "comment": "hiiiii",
+   "rating": 5,
+   "createdAt": "2025-06-19T11:17:54.210Z"
+   }
+
+**NOTE:** ⚠️ Replace "BOOK_OBJECT_ID_HERE" with the actual ObjectId of the book you want the review to be associated with.
+
+
+
+
+
