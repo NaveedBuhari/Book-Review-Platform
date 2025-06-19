@@ -110,15 +110,15 @@ However, if you'd like to manually insert data into MongoDB (for testing or init
 2. Signup Page
    ![image](https://github.com/user-attachments/assets/c8bf864a-631c-4bcc-aea7-4c7ae592b34f)
 
-3. Home Page
+3. Home Page (Logged in as Admin)
    ![image](https://github.com/user-attachments/assets/8b95f340-ceca-4442-891d-70534b1647e6)
    ![image](https://github.com/user-attachments/assets/c01568e6-c462-4efe-8c97-caf746eeeb54)
 
-5. Book List Page
+5. Book List Page (Logged in as Admin)
    ![image](https://github.com/user-attachments/assets/5a688400-2308-4b80-aa76-8f1c201f3a92)
    ![image](https://github.com/user-attachments/assets/bc4b74c9-790e-4a35-abd8-7b749aadd24f)
 
-6. Book Details Page
+6. Book Details Page (Logged in as Admin)
    ![image](https://github.com/user-attachments/assets/747de899-e6d3-4d23-9594-8947b5b834d5)
    ![image](https://github.com/user-attachments/assets/94654510-db66-456a-a0de-c93368480a6f)
 
