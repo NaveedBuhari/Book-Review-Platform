@@ -1,19 +1,25 @@
 # 📚 Book Review Platform
 
-A full-stack book review web application with role-based access for **users** and **admins**, built using **React**, **Node.js**, **Express**, and **MongoDB**.
+A full-stack book review platform with different interfaces for regular users and admins. Users can browse, search, and review books, while admins can manage books and moderate reviews. It is built using **React**, **Node.js**, **Express**, and **MongoDB**.
 
 ---
 
-## 🌟 Features
+## 🔥 Features
 
-- 🔍 Book search with title/author filter and rating dropdown
-- 🧑‍💬 Add and view book reviews with star ratings
-- ✍️ Edit personal bio in profile page
-- 🔐 Role-based actions:
-  - **Users** can search, view, and review books
-  - **Admins** can also add/delete books and delete any review
-- 📋 Pagination for browsing books
-- 💅 Modern, consistent UI across all pages for both roles
+### 👤 Users
+- View all books with pagination.
+- Search books by title or author.
+- Filter books based on minimum rating.
+- View individual book details.
+- Submit reviews (rating + comment).
+- Edit personal bio from profile page.
+
+### 🛡️ Admins
+- All user features +
+- Add new books directly from the interface.
+- Delete any book.
+- Delete any user review (moderation).
+- Admin tag appears next to their reviews.
 
 ---
 
