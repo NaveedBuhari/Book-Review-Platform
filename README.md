@@ -20,10 +20,34 @@ A full-stack book review web application with role-based access for **users** an
 ## ⚙️ Setup Instructions
 
 1. **Download/clone the repository** and open it in VS Code
+   ```bash
+   git clone https://github.com/NaveedBuhari/Book-Review-Platform.git
 
-2. **Install backend dependencies:**
-
+2. **Navigate to the root project folder and install dependencies:**
    ```bash
    cd server
    npm install
+
+   # In a new terminal
+   cd client
+   npm install
+
+3. **Run server**
+
+   ```bash
+   cd server
    node app.js
+
+You should see: MongoDB connected and Server running on port 5000
+
+4. **Run client:**
+   Open a new terminal:
+   ```bash
+   cd client
+   npm start
+
+**NOTE**
+-The node_modules folder is excluded from Git using .gitignore
+-Be sure to run npm install separately inside both client/ and server/ before running the app.
+
+
