@@ -59,7 +59,8 @@ You should see: MongoDB connected and Server running on port 5000
 
 
 ## 📦 Sample Data Structures (MongoDB)
-You can manually insert data in MongoDB using the following formats:
+You can create users, add books, and post reviews directly through the platform's user interface once the project is running. However, if you'd like to manually insert data into MongoDB (for testing or initialization), refer to the following sample formats:
+
 
 1. 🧑 Users Collection
    ```bash
