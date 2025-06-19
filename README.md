@@ -132,14 +132,18 @@ However, if you'd like to manually insert data into MongoDB (for testing or init
 
 
 
-📬 Contact
-Created with ❤️ by Naveed Buhari
-For any questions or collaboration opportunities, feel free to connect via LinkedIn or open an issue here.
+## 📬 Contact
 
+Created with ❤️ by [Naveed Buhari](https://github.com/NaveedBuhari)  
+For any questions or collaboration opportunities, feel free to connect via [LinkedIn](https://www.linkedin.com/in/naveed-buhari-buniyamin-57672a26a) or open an issue here.
 
-⭐️ Show Your Support
-If you like this project, please consider starring it on GitHub!
+---
+
+## ⭐️ Show Your Support
+
+If you like this project, please consider **starring** it on GitHub!  
 Your support motivates continued development and improvement.
+
 
 
 
