@@ -46,8 +46,8 @@ You should see: MongoDB connected and Server running on port 5000
    cd client
    npm start
 
-**NOTE**
--The node_modules folder is excluded from Git using .gitignore
--Be sure to run npm install separately inside both client/ and server/ before running the app.
+## **NOTE**
+- The node_modules folder is excluded from Git using .gitignore
+- Be sure to run npm install separately inside both client/ and server/ before running the app.
 
 
