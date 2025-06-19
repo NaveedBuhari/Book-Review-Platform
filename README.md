@@ -2,7 +2,7 @@
 
 A full-stack book review platform with different interfaces for regular users and admins. Users can browse, search, and review books, while admins can manage books and moderate reviews. It is built using **React**, **Node.js**, **Express**, and **MongoDB**.
 
----
+
 
 ## 🔥 Features
 
@@ -21,7 +21,7 @@ A full-stack book review platform with different interfaces for regular users an
 - Delete any user review (moderation).
 - Admin tag appears next to their reviews.
 
----
+
 
 ## ⚙️ Setup Instructions
 
