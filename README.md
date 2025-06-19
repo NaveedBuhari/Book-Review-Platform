@@ -126,6 +126,8 @@ However, if you'd like to manually insert data into MongoDB (for testing or init
    ![image](https://github.com/user-attachments/assets/053dd0cb-1efa-452c-8db5-82818443eca0)
 
 8. Profile Dropdown
+
+   
    ![image](https://github.com/user-attachments/assets/b07309aa-224c-4824-8994-3ed15e3a5a66)
 
 
