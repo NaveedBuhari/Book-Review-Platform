@@ -10,11 +10,11 @@ You can explore the live version of this project here:
 
 🔗 [Book Review Platform – Live Demo](https://book-review-platform-three.vercel.app)
 
-> Note:
-> - This live demo is fully functional.
-> - You can sign up as a **user** or choose **admin** during signup to experience different access levels.
-> - All reviews and book changes made here are saved in a live MongoDB Atlas database.
-> - In case login or signup fails on mobile or Brave browser, try turning off privacy shields or use Chrome for best compatibility.
+Note:
+- This live demo is fully functional.
+- You can sign up as a **user** or choose **admin** during signup to experience different access levels.
+- All reviews and book changes made here are saved in a live MongoDB Atlas database.
+- In case login or signup fails on mobile or Brave browser, try turning off privacy shields or use Chrome for best compatibility.
 
 
 ---
