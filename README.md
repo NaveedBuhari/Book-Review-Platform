@@ -14,8 +14,7 @@ Note:
 - This live demo is fully functional.
 - You can sign up as a **user** or choose **admin** during signup to experience different access levels.
 - All reviews and book changes made here are saved in a live MongoDB Atlas database.
-- In case login or signup fails on mobile devices or in the Brave browser, try turning off privacy shields and use Chrome on a laptop or desktop for best compatibility.
-
+- On mobile devices or after long use, pages may take a few extra seconds to load initially due to Render's free tier cold start behavior.
 
 ---
 
