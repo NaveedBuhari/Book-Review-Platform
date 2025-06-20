@@ -52,7 +52,7 @@ Note:
    npm install
 
 3. **Run server**
-
+   Open a new terminal:
    ```bash
    cd server
    node app.js
