@@ -68,8 +68,7 @@ You should see: MongoDB connected and Server running on port 5000
 **⚠️NOTE**
 - The node_modules folder is excluded from Git using .gitignore
 - Be sure to run npm install separately inside both client/ and server/ before running the app.
-- This project uses a local MongoDB instance running on port 27017. Ensure MongoDB is installed and running locally before starting the server. Alternatively, you may update the connection string in server/app.js to use a remote MongoDB service like MongoDB Atlas if preferred.
-
+- This project uses a local MongoDB instance running on port 27017. Ensure MongoDB is installed and running locally before starting the server.
 
 ## 📦 Sample Data Structures (MongoDB)
 **You can create users, add books, and post reviews directly through the platform's user interface once the project is running.**
