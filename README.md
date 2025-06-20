@@ -11,7 +11,7 @@ You can explore the live version of this project here:
 🔗 [Book Review Platform – Live Demo](https://book-review-platform-three.vercel.app)
 
 Note:
-- This live demo is fully functional.
+- The project is fully deployed for live demo. Frontend is hosted on Vercel, backend on Render, and the database used is a live MongoDB Atlas instance.
 - You can sign up as a **user** or choose **admin** during signup to experience different access levels.
 - All reviews and book changes made here are saved in a live MongoDB Atlas database.
 - On mobile devices or after long use, pages may take a few extra seconds to load initially due to Render's free tier cold start behavior.
