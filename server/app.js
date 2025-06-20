@@ -10,8 +10,14 @@ const userRoutes = require('./routes/userRoutes');
 
 
 const app = express();
-app.use(cors());
+
+app.use(cors({
+  origin: 'https://book-review-platform-three.vercel.app',
+  credentials: true
+}));
+
 app.use(express.json());
+
 
 app.use('/books', bookRoutes);
 app.use('/reviews', reviewRoutes);

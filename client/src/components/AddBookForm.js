@@ -17,10 +17,11 @@ function AddBookForm({ setBooks }) {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/books', form, {
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}/books`, form, {
         headers: {
           'x-user-role': user.role
-        }
+        },
+        withCredentials: true
       });
       setBooks(prev => [...prev, res.data]);
       alert('Book added!');

@@ -15,7 +15,6 @@ const quotes = [
   "The only thing you absolutely have to know is the location of the library. – Albert Einstein"
 ];
 
-
 function Home() {
   const [quoteIndex, setQuoteIndex] = useState(0);
   const [featuredBooks, setFeaturedBooks] = useState([]);
@@ -28,7 +27,7 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/books')
+    axios.get(`${process.env.REACT_APP_API_URL}/books`, { withCredentials: true })
       .then(res => {
         const bookArray = Array.isArray(res.data) ? res.data : res.data.books || [];
         const randomBooks = bookArray.sort(() => 0.5 - Math.random()).slice(0, 4);

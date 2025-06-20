@@ -20,7 +20,11 @@ function Login() {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.post('http://localhost:5000/users/login', form);
+      const res = await axios.post(
+    `${process.env.REACT_APP_API_URL}/users/login`,
+    form,
+    { withCredentials: true }
+  );
       setUser(res.data);
       navigate('/');
     } catch {

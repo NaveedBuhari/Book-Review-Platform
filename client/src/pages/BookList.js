@@ -24,7 +24,7 @@ function BookList() {
 
   const fetchBooks = (pageNum = 1) => {
     setLoading(true);
-    axios.get(`http://localhost:5000/books?page=${pageNum}&limit=10`)
+    axios.get(`${process.env.REACT_APP_API_URL}/books?page=${pageNum}&limit=10`, { withCredentials: true })
       .then(res => {
         setBooks(res.data.books);
         setPages(res.data.pages);
@@ -44,8 +44,9 @@ function BookList() {
 
   const handleDelete = (id) => {
     if (window.confirm('Are you sure you want to delete this book?')) {
-      axios.delete(`http://localhost:5000/books/${id}`, {
-        headers: { 'x-user-role': user.role }
+      axios.delete(`${process.env.REACT_APP_API_URL}/books/${id}`, {
+        headers: { 'x-user-role': user.role },
+        withCredentials: true
       })
         .then(() => fetchBooks(page))
         .catch(() => alert('Delete failed'));
@@ -55,8 +56,9 @@ function BookList() {
   const handleAddBook = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/books', form, {
-        headers: { 'x-user-role': user.role }
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}/books`, form, {
+        headers: { 'x-user-role': user.role },
+        withCredentials: true
       });
       setBooks(prev => [...prev, res.data]);
       setForm({ title: '', author: '', description: '', coverImage: '', rating: 0 });

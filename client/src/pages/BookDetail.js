@@ -13,11 +13,11 @@ function BookDetail() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/books/${id}`)
+    axios.get(`${process.env.REACT_APP_API_URL}/books/${id}`, { withCredentials: true })
       .then(res => setBook(res.data))
       .catch(err => setError('Error loading book.'));
 
-    axios.get(`http://localhost:5000/reviews?bookId=${id}`)
+    axios.get(`${process.env.REACT_APP_API_URL}/reviews?bookId=${id}`, { withCredentials: true })
       .then(res => setReviews(res.data))
       .finally(() => setLoading(false));
   }, [id]);
@@ -25,8 +25,9 @@ function BookDetail() {
   const handleDeleteReview = (reviewId) => {
     if (window.confirm('Are you sure you want to delete this review?')) {
       axios
-        .delete(`http://localhost:5000/reviews/${reviewId}`, {
-          headers: { 'x-user-role': user.role }
+        .delete(`${process.env.REACT_APP_API_URL}/reviews/${reviewId}`, {
+          headers: { 'x-user-role': user.role },
+          withCredentials: true
         })
         .then(() => setReviews(prev => prev.filter(r => r._id !== reviewId)))
         .catch(() => alert('Failed to delete review.'));

@@ -14,7 +14,9 @@ function ReviewForm({ bookId, user, setReviews }) {
       comment,
       rating: Number(rating)
     };
-    axios.post('http://localhost:5000/reviews', review)
+    axios.post(`${process.env.REACT_APP_API_URL}/reviews`, review, {
+      withCredentials: true
+    })
       .then(res => {
         setReviews(prev => [...prev, res.data]);
         setComment('');

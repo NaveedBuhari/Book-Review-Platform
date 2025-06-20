@@ -21,7 +21,11 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/users', formData);
+      const res = await axios.post(
+        `${process.env.REACT_APP_API_URL}/users`,
+        formData,
+        { withCredentials: true }
+      );
       if (res.status === 201) {
         alert('Account created successfully');
         navigate('/login');

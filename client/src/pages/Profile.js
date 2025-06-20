@@ -9,7 +9,9 @@ function Profile() {
 
   useEffect(() => {
     if (user) {
-      axios.get(`http://localhost:5000/users/${user._id}`)
+      axios.get(`${process.env.REACT_APP_API_URL}/users/${user._id}`, {
+        withCredentials: true
+      })
         .then(res => {
           setBio(res.data.bio);
           setLoading(false);
@@ -19,7 +21,9 @@ function Profile() {
   }, [user]);
 
   const handleSave = async () => {
-    const res = await axios.put(`http://localhost:5000/users/${user._id}`, { bio });
+    const res = await axios.put(`${process.env.REACT_APP_API_URL}/users/${user._id}`, { bio }, {
+      withCredentials: true
+    });
     setUser(res.data);
     alert('Profile updated!');
   };
