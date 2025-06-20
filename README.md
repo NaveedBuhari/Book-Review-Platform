@@ -47,11 +47,11 @@ Note:
    cd server
    npm install
 
-   # In a new terminal
+   # In a new terminal, navvigate to root project folder
    cd client
    npm install
 
-3. **Run server**
+3. **Run server:**
    Open a new terminal:
    ```bash
    cd server
