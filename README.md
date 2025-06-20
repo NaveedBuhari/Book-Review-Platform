@@ -33,7 +33,6 @@ Note:
 - Add new books directly from the interface.
 - Delete any book.
 - Delete any user review (moderation).
-- Admin tag appears next to their reviews.
 
 ---
 
